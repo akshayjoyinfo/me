@@ -25,6 +25,7 @@ export class SidenavService {
   }
 
   public toggle() {
+    console.log("ADASDSADSAD")
     this.opened = !this.opened;
     return this.sidenav.toggle();
   }

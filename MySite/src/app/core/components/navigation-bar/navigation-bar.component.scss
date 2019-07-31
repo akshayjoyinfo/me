@@ -2,6 +2,10 @@ $crm-toolbar-title-padding: 16px !default;
 
 .toolbar-title {
   margin: 0 $crm-toolbar-title-padding 0 $crm-toolbar-title-padding;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 26px
 }
 
 .navigation-items {

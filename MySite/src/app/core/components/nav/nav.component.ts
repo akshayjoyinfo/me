@@ -16,7 +16,6 @@ interface ROUTE {
 })
 
 export class NavComponent implements OnInit, OnDestroy {
-  @ViewChild('commandbarSidenav', {static: false}) public sidenav: MatSidenav;
 
   myWorkRoutes: ROUTE[] = [
     {
@@ -55,12 +54,12 @@ export class NavComponent implements OnInit, OnDestroy {
 
   }
 
-  constructor(private commandBarSidenavService: SidenavService) {
+  constructor() {
 
   }
 
   ngOnInit() {
-    this.commandBarSidenavService.setSidenav(this.sidenav);
+
   }
 
 }
