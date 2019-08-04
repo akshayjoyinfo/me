@@ -1,19 +1,12 @@
 <app-navigation-bar (toggleSidenav)="navigationSidenav.toggle()">
 </app-navigation-bar>
 
-<mat-sidenav-container autosize>
+<mat-sidenav-container autosize class="mat-elevation-z8">
 
-  <mat-sidenav #navigationSidenav mode="over" role="navigation">
-
-    <mat-toolbar>
-      <mat-toolbar-row>
-        <h2 class="toolbar-title"> {{ 'APP_TOOLBAR_TITLE' }} </h2>
-      </mat-toolbar-row>
-    </mat-toolbar>
-
+  <mat-sidenav #navigationSidenav mode="side" opened role="navigation"  [fixedInViewport]="true" [fixedTopGap]="layoutGap">
     <mat-nav-list>
 
-      <h2 matSubheader> {{ 'MY_WORK' | translate }} </h2>
+      <h2 matSubheader> {{'MySelf' }} </h2>
 
       <a mat-list-item routerLink="/" style="height: 0;"></a>
 
@@ -42,11 +35,7 @@
     </mat-nav-list>
 
   </mat-sidenav>
-
-  <mat-sidenav #commandbarSidenav position="end" mode="side" class="crm-command-bar-sidenav">
-
-    <mat-list style="padding: 10px;">
-
-
-
-    </mat-list>
+  <mat-sidenav-content role="main" class="mat-sidenav-mysite-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

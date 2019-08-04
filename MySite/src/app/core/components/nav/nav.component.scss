@@ -1,7 +1,20 @@
+// https://material.angular.io/guide/theming-your-components
+
 .mat-sidenav-container {
   height: 100%;
 }
 
+.mat-sidenav-mysite-content{
+  margin-top: 64px;
+}
+
+.div-scrollable {
+  display: flex;
+  justify-content: left;
+  align-items: stretch;
+  min-height: 700px;
+  overflow: hidden;
+}
 /*
 .sidenav-container {
   height: 100%;
@@ -28,3 +41,23 @@ $sidenav-width: 320px; // 240px;
 .app-nav-list-icon {
   margin: 0 12px 0 12px;
 }
+
+/*
+.mat-sidenav-content {
+  overflow: hidden;
+}
+*/
+
+/*
+.sidenav {
+  width: 200px;
+}
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+*/

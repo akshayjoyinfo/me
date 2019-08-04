@@ -17,14 +17,17 @@ interface ROUTE {
 
 export class NavComponent implements OnInit, OnDestroy {
 
+  layoutGap = '64';
+  fixedInViewport = true;
+
   myWorkRoutes: ROUTE[] = [
     {
-      icon: 'assignment',
-      route: 'sales/activities',
-      title: 'Activities',
+      icon: 'account_circle',
+      route: 'about',
+      title: 'About Me',
     }, {
       icon: 'dashboard',
-      route: 'sales/dashboards',
+      route: 'dashboards',
       title: 'Dashboards',
     }
   ];
@@ -32,19 +35,19 @@ export class NavComponent implements OnInit, OnDestroy {
   customerRoutes: ROUTE[] = [
     {
       icon: 'contacts',
-      route: 'sales/accounts',
+      route: 'accounts',
       title: 'Accounts',
     }, {
       icon: 'people',
-      route: 'sales/contacts',
+      route: 'contacts',
       title: 'Contacts',
     }, {
       icon: 'settings_phone',
-      route: 'sales/leads',
+      route: 'leads',
       title: 'Leads',
     }, {
       icon: 'account_box',
-      route: 'sales/opportunities',
+      route: 'opportunities',
       title: 'Opportunities',
     }
   ];
