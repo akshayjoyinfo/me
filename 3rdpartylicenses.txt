@@ -97,6 +97,8 @@ THE SOFTWARE.
 
 @angular/material/divider
 
+@angular/material/grid-list
+
 @angular/material/icon
 
 @angular/material/list
