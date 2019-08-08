@@ -1,9 +1,31 @@
 .example-card {
-  max-width: 320px;
+  margin: 5px;
+  // min-width: 200px;
+  // min-height: 200px;
+}
+
+.example-personal-info-card {
+  margin: 5px;
+  // min-width: 200px;
+  // min-height: 600px;
+}
+
+.mat-card-title-personal{
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 
 .example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-image: url('https://www.gravatar.com/avatar/820485f598a880f02f1de125784b1bef?s=48&d=identicon&r=PG');
   background-size: cover;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+}
+/* Row Gap */
+.cardList > *:not(:last-child) {
+  margin-bottom: 32px;
 }

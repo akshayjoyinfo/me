@@ -1,53 +1,100 @@
-<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="space-evenly center" style="margin: 20px">
-<mat-card class="example-card mat-elevation-z8">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-     This is my personal info about my page
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-<mat-card class="example-card mat-elevation-z8">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      bting my social profile
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-<mat-card class="example-card mat-elevation-z8">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      bting my social profile
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button color="primary">LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-</div>
+<mat-grid-list  [responsive] ="responsive" rowHeight="320px" (responsiveColsChange)="cols = $event">
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 92%">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title class="mat-card-title-personal">Akshay P Joy</mat-card-title>
+              <mat-card-subtitle>Full Stack Developer</mat-card-subtitle>
+            </mat-card-header>
+            
+            <mat-card-content>
+              <p>
+                  Competent, diligent & result-oriented professional, with 6.2+ years’ experience in.NET Framework, 
+                  AZURE, Elastic Pool, Multitenant Database Architecture, Azure Automated Deployment, 
+                  Software Development Analysis, Design Pattern, Coding, DevOps(Jenkins), Automated Testing Suites(Specflow/BDD), 
+                  API Integration(Salesforce, Facebook, Adowrds), Complete .NET stacks; currently serving as Senior Software Engineer with OPTUM Global Solutions (United Health Group Company). Expertise in.Net, Vb.Net, Web Services, WCF, ASP.net, MVC 4.5, SQL Server(multiple versions), Remoting, Entity Framework, Enterprise Library and working in the complete Software development life cycle involving development, documentation, testing and maintenance. Sound knowledge of all areas of the Software Development Life Cycle (SDLC) of Service Oriented Architecture (SOA); 
+                  convergent with Analysis and design of databases and user interfaces
+              </p>
+            </mat-card-content>
+            <mat-card-footer>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-footer>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
+            <mat-card-content>
+              <p>
+              asdasds sdas
+              </p>
+            </mat-card-content>
+            <mat-card-footer>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-footer>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1" >
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
+            <mat-card-content>
+              <p>
+              asdasds sdas
+              </p>
+            </mat-card-content>
+            <mat-card-footer>
+            sadas
+            </mat-card-footer>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
+            <mat-card-content>
+              <p>
+              asdasds sdas
+              </p>
+            </mat-card-content>
+            <mat-card-footer>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-footer>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
+            <mat-card-content>
+              <p>
+              asdasds sdas
+              </p>
+            </mat-card-content>
+            <mat-card-footer>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-footer>
+          </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
