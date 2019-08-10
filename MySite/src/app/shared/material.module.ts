@@ -31,7 +31,8 @@ import {
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatBadgeModule
 } from '@angular/material';
 
 import { CdkTableModule } from '@angular/cdk/table';
@@ -72,6 +73,7 @@ import { MatGridListResponsiveModule } from './mat-grid-responsive-list/mat-grid
         MatTabsModule,
         MatToolbarModule,
         MatTooltipModule,
+        MatBadgeModule,
         MatGridListResponsiveModule
     ],
     exports: [
@@ -108,7 +110,8 @@ import { MatGridListResponsiveModule } from './mat-grid-responsive-list/mat-grid
         MatTabsModule,
         MatToolbarModule,
         MatTooltipModule,
-        MatGridListResponsiveModule
+        MatBadgeModule,
+        MatGridListResponsiveModule,
     ]
 })
 export class MaterialModule {

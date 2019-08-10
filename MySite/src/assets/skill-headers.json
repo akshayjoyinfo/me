@@ -1,0 +1,39 @@
+[
+  {
+    "skill" : ".NET CORE",
+    "color" : "accent"
+  },
+  {
+    "skill" : ".NET",
+    "color" : "accent"
+  },
+  {
+    "skill" : "Angular",
+    "color" : "primary"
+  },
+  {
+    "skill" : "Python",
+    "color" : "primary"
+  },
+  {
+    "skill" : "Databases(SQL/NOSQL)",
+    "color" : "accent"
+  },
+  {
+    "skill" : "Cloud (AZURE/AWS)",
+    "color" : "accent"
+  },
+  {
+    "skill" : "Digitial Markerting Tech",
+    "color" : "warn"
+  },
+  {
+    "skill" : "Startup",
+    "color" : "warn"
+  },
+  {
+    "skill" : "Freelancer",
+    "color" : "warn"
+  }
+]
+

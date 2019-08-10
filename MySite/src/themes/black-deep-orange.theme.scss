@@ -37,8 +37,8 @@ $custom-typography: mat-typography-config(
 @import "./palette";
 
 $primary: mat-palette($mat-black, 900);
-$accent:  mat-palette($mat-deep-orange, 500, A100, A400);
-$warn:    mat-palette($mat-red, 600);
+$accent:  mat-palette($mat-blue-grey, 200, A100, A400);
+$warn:    mat-palette($mat-red, 200);
 
 $theme: mat-light-theme($primary, $accent, $warn);
 

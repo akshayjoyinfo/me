@@ -1,62 +1,82 @@
 <mat-grid-list  [responsive] ="responsive" rowHeight="320px" (responsiveColsChange)="cols = $event">
-    <mat-grid-tile [colspan]="1" [rowspan]="2">
+    <mat-grid-tile [colspan]="1" [rowspan]="2" style="overflow:auto;">
         <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 92%">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
               <mat-card-title class="mat-card-title-personal">Akshay P Joy</mat-card-title>
-              <mat-card-subtitle>Full Stack Developer</mat-card-subtitle>
+              <mat-card-subtitle class="mat-card-sub-title-personal" color="primary">Full Stack Developer</mat-card-subtitle>
+              <mat-card-subtitle class="mat-card-sub-title-personal">
+                <mat-chip-list aria-label="selection">
+                  <mat-chip *ngFor ='let skillHeader of skillHeaders' [color]='skillHeader.color' selected>{{skillHeader.skill}}</mat-chip>
+                </mat-chip-list>
+              </mat-card-subtitle>
             </mat-card-header>
-            
-            <mat-card-content>
-              <p>
-                  Competent, diligent & result-oriented professional, with 6.2+ years’ experience in.NET Framework, 
-                  AZURE, Elastic Pool, Multitenant Database Architecture, Azure Automated Deployment, 
-                  Software Development Analysis, Design Pattern, Coding, DevOps(Jenkins), Automated Testing Suites(Specflow/BDD), 
-                  API Integration(Salesforce, Facebook, Adowrds), Complete .NET stacks; currently serving as Senior Software Engineer with OPTUM Global Solutions (United Health Group Company). Expertise in.Net, Vb.Net, Web Services, WCF, ASP.net, MVC 4.5, SQL Server(multiple versions), Remoting, Entity Framework, Enterprise Library and working in the complete Software development life cycle involving development, documentation, testing and maintenance. Sound knowledge of all areas of the Software Development Life Cycle (SDLC) of Service Oriented Architecture (SOA); 
-                  convergent with Analysis and design of databases and user interfaces
-              </p>
+
+            <mat-card-content style="padding: 5px">
+
+                  Competent, diligent & result-oriented professional, with <b>8+ year’s</b> experience IT industry. Worked accros multiple
+                  Business Domains <b>Banking</b>, <b>Digital Marketing</b>, <b>Digital Marketing Tracking Engineering</b>,
+                  <b>HealthCare (United Health Group)</b>
+                  I believe in Don't repeat yourself philosophy. Worked as Tracking Team Lead for Digitil Marketing Company.
+                  Completed one successful story AZURE Migration (Data, App, Processing, Scaling) as part of <b>DeltaX Digital Marketing Company</b>. Loved to explore the other stacks if and only if stack can solve my problem.
+                  Loved python automation works Scarpy. Attended online coding competition.
+
+                  <blockquote>
+                      Just because something works doesn’t mean it can’t be improved
+                      <span class="author"><i>Black Panther: Princess Shuri</i></span>
+                    </blockquote>
             </mat-card-content>
-            <mat-card-footer>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-footer>
           </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84% ; width:100%">
             <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <div mat-card-avatar class="github-header-image"></div>
+              <mat-card-title (click)="goToLink('https://github.com/akshayjoyinfo')">Github</mat-card-title>
+              <mat-card-subtitle (click)="goToLink('https://github.com/akshayjoyinfo')">@akshayjoyinfo</mat-card-subtitle>
             </mat-card-header>
-            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
-            <mat-card-content>
-              <p>
-              asdasds sdas
-              </p>
+            My Github Contributions
+            <mat-card-content style="padding:10px">
+                <p>
+                    <b>Guthub</b>
+                    <button style="margin-left: 10px;margin-right: 15px" mat-raised-button color="accent" (click)="goToLink('https://github.com/akshayjoyinfo')"
+                        matBadge="35" matBadgePosition="after" matBadgeColor="primary">
+                        REPOS
+                    </button>
+                    <button style="margin-right: 15px" mat-raised-button color="accent" (click)="goToLink('https://github.com/akshayjoyinfo?tab=repositories')"
+                        matBadge="0" matBadgePosition="after" matBadgeColor="primary">
+                        GISTS
+                    </button>
+                    <button style="margin-right: 15px" mat-raised-button color="accent" (click)="goToLink('https://github.com/akshayjoyinfo?tab=stars')"
+                    matBadge="14" matBadgePosition="after" matBadgeColor="primary">
+                    STARS
+                </button>
+                  </p>
+                  <p>
+                      <mat-chip-list aria-label="selection">
+                          <mat-chip *ngFor ='let lang of githubLanguages' color='accent' selected>{{lang}}</mat-chip>
+                        </mat-chip-list>
+                  </p>
+
+
             </mat-card-content>
-            <mat-card-footer>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-footer>
+
           </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1" >
-        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%; width:100%;">
             <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <div mat-card-avatar class="stackoverflow-header-image"></div>
+              <mat-card-title>StackOverFlow</mat-card-title>
+              <mat-card-subtitle>@users/1802203/akshay-joy</mat-card-subtitle>
             </mat-card-header>
-            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
+            My Stack Overflow Contributions
             <mat-card-content>
               <p>
-              asdasds sdas
+                  <a href="https://stackexchange.com/users/2014603"><img src="https://stackexchange.com/users/flair/2014603.png" width="300" height="70" alt="profile for Akshay Joy on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Akshay Joy on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
               </p>
             </mat-card-content>
-            <mat-card-footer>
-            sadas
-            </mat-card-footer>
+
           </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">
