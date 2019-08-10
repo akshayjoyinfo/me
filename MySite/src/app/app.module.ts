@@ -8,8 +8,6 @@ import { NavComponent } from './core/components/nav/nav.component';
 import { CoreModule } from './core/core.module';
 import { AboutMeComponent } from './pages/components/about-me.component';
 import { PagesModule } from './pages/pages.module';
-import { SiteModelsModule } from './shared/site-models.module';
-
 
 @NgModule({
   declarations: [
