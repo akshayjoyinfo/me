@@ -38,7 +38,11 @@ $custom-typography: mat-typography-config(
 
 $primary: mat-palette($mat-black, 900);
 $accent:  mat-palette($mat-blue-grey, 200, A100, A400);
-$warn:    mat-palette($mat-red, 200);
+$warn:    mat-palette($mat-red, 600);
+
+$gold: mat-palette($mat-amber,900);
+$silver: mat-palette($mat-grey,900);
+$bronze: mat-palette($mat-deep-orange,900);
 
 $theme: mat-light-theme($primary, $accent, $warn);
 

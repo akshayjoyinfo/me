@@ -1,4 +1,4 @@
-<mat-grid-list  [responsive] ="responsive" rowHeight="320px" (responsiveColsChange)="cols = $event">
+<mat-grid-list  [responsive] ="responsive" rowHeight="320px" (responsiveColsChange)="cols = $event" style="margin-top: 2px">
     <mat-grid-tile [colspan]="1" [rowspan]="2" style="overflow:auto;">
         <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 92%">
             <mat-card-header>
@@ -35,7 +35,7 @@
               <mat-card-title (click)="goToLink('https://github.com/akshayjoyinfo')">Github</mat-card-title>
               <mat-card-subtitle (click)="goToLink('https://github.com/akshayjoyinfo')">@akshayjoyinfo</mat-card-subtitle>
             </mat-card-header>
-            My Github Contributions
+            <b>My Github Contributions</b>
             <mat-card-content style="padding:10px">
                 <p>
                     <b>Guthub</b>
@@ -44,7 +44,7 @@
                         REPOS
                     </button>
                     <button style="margin-right: 15px" mat-raised-button color="accent" (click)="goToLink('https://github.com/akshayjoyinfo?tab=repositories')"
-                        matBadge="0" matBadgePosition="after" matBadgeColor="primary">
+                        matBadge="2" matBadgePosition="after" matBadgeColor="primary">
                         GISTS
                     </button>
                     <button style="margin-right: 15px" mat-raised-button color="accent" (click)="goToLink('https://github.com/akshayjoyinfo?tab=stars')"
@@ -52,7 +52,10 @@
                     STARS
                 </button>
                   </p>
+                  <b>Languages </b>
                   <p>
+
+
                       <mat-chip-list aria-label="selection">
                           <mat-chip *ngFor ='let lang of githubLanguages' color='accent' selected>{{lang}}</mat-chip>
                         </mat-chip-list>
@@ -67,54 +70,55 @@
         <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%; width:100%;">
             <mat-card-header>
               <div mat-card-avatar class="stackoverflow-header-image"></div>
-              <mat-card-title>StackOverFlow</mat-card-title>
+              <mat-card-title (click)="goToLink('https://stackoverflow.com/users/1802203/akshay-joy')">StackOverflow</mat-card-title>
               <mat-card-subtitle>@users/1802203/akshay-joy</mat-card-subtitle>
             </mat-card-header>
             My Stack Overflow Contributions
             <mat-card-content>
               <p>
-                  <a href="https://stackexchange.com/users/2014603"><img src="https://stackexchange.com/users/flair/2014603.png" width="300" height="70" alt="profile for Akshay Joy on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Akshay Joy on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
+                  Reputations:
+                  <button mat-raised-button color="accent" (click)="goToLink('https://stackoverflow.com/users/1802203/akshay-joy?tab=reputation')"><b>1,610</b></button>
               </p>
+                  <p>
+                    Badges
+                  <button mat-raised-button style="background: #FFCD47" (click)="goToLink('https://stackoverflow.com/users/1802203/akshay-joy?tab=badges')">Gold: <b>1</b></button>
+                  <button mat-raised-button style="background:#F6EDE5" (click)="goToLink('https://stackoverflow.com/users/1802203/akshay-joy?tab=badges')">Silver: <b>10</b></button>
+                  <button mat-raised-button style="background:#F77400" (click)="goToLink('https://stackoverflow.com/users/1802203/akshay-joy?tab=badges')">Bronze:<b>20</b></button>
+                </p>
+
+                <p>
+                    <mat-chip-list aria-label="selection">
+                    <mat-chip color='accent' selected>147 answer</mat-chip>
+                    <mat-chip color='accent' selected>19 questions</mat-chip>
+                    <mat-chip color='accent' selected>~281k people reached</mat-chip>
+                  </mat-chip-list>
+                </p>
             </mat-card-content>
 
           </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%; width:100%">
             <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <div mat-card-avatar class="pluralsight-header-image"></div>
+              <mat-card-title>PluralSight- C#</mat-card-title>
+              <mat-card-subtitle>Akshay Joy</mat-card-subtitle>
             </mat-card-header>
-            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
-            <mat-card-content>
-              <p>
-              asdasds sdas
-              </p>
-            </mat-card-content>
-            <mat-card-footer>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-footer>
+            <mat-card-content style="text-align: center">
+            <img mat-card-image style="width:400px; height: 150px; padding:10px" src="/assets/images/pluralsight-csharp.jfif" alt="Plural Songh Angular - Akshay Porfile">
+          </mat-card-content>
           </mat-card>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="1" [rowspan]="1">
-        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%">
+        <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 84%; width:100%">
             <mat-card-header>
-              <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <div mat-card-avatar class="pluralsight-header-image"></div>
+              <mat-card-title>PluralSight-Angular</mat-card-title>
+              <mat-card-subtitle>Akshay</mat-card-subtitle>
             </mat-card-header>
-            asdasdasdasdasdasdsa sa dsad sa dsa dsad asd asd asd asd asd asdasd as dsadas dasd
-            <mat-card-content>
-              <p>
-              asdasds sdas
-              </p>
-            </mat-card-content>
-            <mat-card-footer>
-              <button mat-button>LIKE</button>
-              <button mat-button>SHARE</button>
-            </mat-card-footer>
+            <mat-card-content style="text-align: center">
+            <img mat-card-image style="width:400px; height: 150px; padding:10px" src="/assets/images/pluralsight-angular.jfif" alt="Plural Songh Angular - Akshay Porfile">
+          </mat-card-content>
           </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
