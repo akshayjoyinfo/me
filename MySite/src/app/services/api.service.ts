@@ -3,6 +3,7 @@ import { Observable, throwError } from 'rxjs';
 import { SkillHeader } from '../shared/models/skill-header.model';
 import { HttpErrorResponse, HttpClient } from '@angular/common/http';
 import { catchError, tap, map } from 'rxjs/operators';
+import { PersonalProfile } from '../shared/models/personal-profile.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,7 @@ export class ApiService {
 
   private skillHeadersUrl = 'assets/skill-headers.json';
   private githubLangsUrl = 'assets/github-langs.json';
+  private personalProfileUrl = 'assets/personal-profile.json';
   constructor(private http: HttpClient) {
   }
 
@@ -29,6 +31,14 @@ export class ApiService {
       catchError(this.handleError)
     );
   }
+
+  getProfileDetails(): Observable<PersonalProfile[]> {
+    return this.http.get<PersonalProfile[]>(this.personalProfileUrl).pipe(
+      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      catchError(this.handleError)
+    );
+  }
+
   private handleError(err: HttpErrorResponse) {
     // in a real world app, we may send the server to some remote logging infrastructure
     // instead of just logging it to the console

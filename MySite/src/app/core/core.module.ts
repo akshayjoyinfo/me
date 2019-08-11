@@ -11,6 +11,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { ObserversModule } from '@angular/cdk/observers';
 
 @NgModule({
   declarations: [ NavComponent, NavigationBarComponent ],

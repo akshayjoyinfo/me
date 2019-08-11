@@ -72,5 +72,15 @@ mat-card-subtitle{
 }
 
 .mat-raised-button{
-  margin : 5px
+  margin : 5px;
+  line-height: 20px;
+}
+
+.mat-standard-chip{
+  min-height: 25px;
+}
+
+.social-header-image{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQ6zxR0usCLYngapO3QJ1zg_yTZPMAC_0MLNtef9jz1c7S9vx');
+  background-size: cover;
 }

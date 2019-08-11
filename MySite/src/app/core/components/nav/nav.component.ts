@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy, ViewChild, ElementRef, Renderer2 } from '
 
 import { MatSidenav } from '@angular/material';
 import { SidenavService } from 'src/app/services/sidenav.service';
+import { MediaObserver } from '@angular/flex-layout';
+
 
 interface ROUTE {
   icon?: string;
@@ -26,9 +28,9 @@ export class NavComponent implements OnInit, OnDestroy {
       route: 'about',
       title: 'About Me',
     }, {
-      icon: 'dashboard',
-      route: 'dashboards',
-      title: 'Dashboards',
+      icon: 'perm_identity',
+      route: 'personal',
+      title: 'Personal',
     }
   ];
 
@@ -57,7 +59,7 @@ export class NavComponent implements OnInit, OnDestroy {
 
   }
 
-  constructor() {
+  constructor(public media: MediaObserver) {
 
   }
 
