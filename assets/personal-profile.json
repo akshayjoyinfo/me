@@ -1,0 +1,37 @@
+[
+  {
+    "label": "Name",
+    "value": "Akshay P Joy",
+    "icon": "account_circle"
+  },
+  {
+    "label": "Experience",
+    "value": "8+ Years",
+    "icon": "chrome_reader_mode"
+  },
+  {
+    "label": "Address",
+    "value": "Flat 104, Oceanus Lily Apartment, Hoysala Nagar, Ramamurthy Nagar, Bangalore, Karnataka, India -560016",
+    "icon": "home"
+  },
+  {
+    "label": "Age",
+    "value": "29",
+    "icon": "facew"
+  },
+  {
+    "label": "Country",
+    "value": "INDIA",
+    "icon": "language"
+  },
+  {
+    "label": "Email",
+    "value": "akshayjoyinfo@gmail.com",
+    "icon": "mail"
+  },
+  {
+    "label": "Phone",
+    "value": "7204285639",
+    "icon": "phone_callback"
+  }
+]
