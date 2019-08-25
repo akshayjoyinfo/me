@@ -1,6 +1,11 @@
 @import "themes/black-deep-orange.theme";
 
 
+.personal-header-image {
+  background-image: url('/assets/images/akshay-joy-icon.png');
+  background-size: cover;
+}
+
 blockquote {
   position: relative;
   display: inline-block;

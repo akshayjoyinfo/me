@@ -12,10 +12,14 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { RouterModule } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ObserversModule } from '@angular/cdk/observers';
+import {NgxTypedJsModule} from 'ngx-typed-js';
+
+
 
 @NgModule({
   declarations: [ NavComponent, NavigationBarComponent ],
   imports: [
+    NgxTypedJsModule,
     MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,

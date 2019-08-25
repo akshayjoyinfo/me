@@ -3,6 +3,15 @@ import { Component, OnInit, OnDestroy, ViewChild, ElementRef, Renderer2 } from '
 import { MatSidenav } from '@angular/material';
 import { SidenavService } from 'src/app/services/sidenav.service';
 import { MediaObserver } from '@angular/flex-layout';
+import {
+  Event,
+  NavigationCancel,
+  NavigationEnd,
+  NavigationError,
+  NavigationStart,
+  Router
+} from '@angular/router';
+
 
 
 interface ROUTE {
@@ -18,7 +27,7 @@ interface ROUTE {
 })
 
 export class NavComponent implements OnInit, OnDestroy {
-
+  loading = false;
   layoutGap = '64';
   fixedInViewport = true;
 
@@ -26,7 +35,7 @@ export class NavComponent implements OnInit, OnDestroy {
     {
       icon: 'account_circle',
       route: 'about',
-      title: 'About Me',
+      title: 'About',
     }, {
       icon: 'perm_identity',
       route: 'personal',
@@ -36,9 +45,9 @@ export class NavComponent implements OnInit, OnDestroy {
 
   customerRoutes: ROUTE[] = [
     {
-      icon: 'contacts',
-      route: 'accounts',
-      title: 'Accounts',
+      icon: 'trending_up',
+      route: 'experience',
+      title: 'Experience',
     }, {
       icon: 'people',
       route: 'contacts',
@@ -59,12 +68,34 @@ export class NavComponent implements OnInit, OnDestroy {
 
   }
 
-  constructor(public media: MediaObserver) {
+  constructor(public media: MediaObserver, private router: Router) {
+    this.router.events.subscribe((event: Event) => {
+      switch (true) {
+        case event instanceof NavigationStart: {
+          this.delay(25000).then(dt => {
+            console.log('done');
+          });
+          this.loading = true;
+          break;
+        }
 
+        case event instanceof NavigationEnd:
+        case event instanceof NavigationCancel:
+        case event instanceof NavigationError: {
+          this.loading = false;
+          break;
+        }
+        default: {
+          break;
+        }
+      }
+    });
   }
 
   ngOnInit() {
 
   }
-
+  async delay(ms: number) {
+    await new Promise(resolve => setTimeout(() => resolve(), ms)).then(() => console.log('fired'));
+}
 }

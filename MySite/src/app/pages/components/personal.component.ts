@@ -10,6 +10,7 @@ import { PersonalProfile } from 'src/app/shared/models/personal-profile.model';
 })
 export class PersonalComponent implements OnInit {
   responsive = true;
+  loading = true;
   cols = 3;
   profileOptions: FormGroup;
   profileInformations: PersonalProfile[] = [];
@@ -35,6 +36,7 @@ export class PersonalComponent implements OnInit {
           floatLabel: 'always'
         });
         this.profileOptions.disable();
+        this.loading = false;
       },
       error => this.errorMessage = error as any
     );

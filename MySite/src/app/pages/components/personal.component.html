@@ -1,4 +1,6 @@
-<mat-grid-list rowHeight="750px" cols=1 style="margin: 2px">
+<mat-progress-bar *ngIf="loading"  color="warn" mode="indeterminate">
+  </mat-progress-bar>
+<mat-grid-list rowHeight="680px" cols=1 style="margin: 2px">
   <mat-grid-tile [colspan]="1" [rowspan]="1" style="overflow:auto">
     <mat-card class="personal-card">
       <mat-card-header>
@@ -10,7 +12,8 @@
         <div class="example-container">
           <mat-form-field *ngFor="let profileInfo of profileInformations;" [floatLabel]="profileOptions.value.floatLabel">
             <mat-icon class="profile-info-icon" matPrefix>{{profileInfo.icon}}</mat-icon>
-            <input matInput [placeholder]= "profileInfo.label" [value]="profileInfo.value" readonly=true>
+            <input *ngIf="!profileInfo.textArea" matInput [placeholder]= "profileInfo.label" [value]="profileInfo.value" readonly=true>
+            <textarea *ngIf="profileInfo.textArea" matInput [placeholder]= "profileInfo.label" readonly=true>{{profileInfo.value}}</textarea>
           </mat-form-field>
         </div>
       </mat-card-content>

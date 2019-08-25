@@ -1,4 +1,6 @@
-<mat-grid-list  [responsive] ="responsive" rowHeight="320px" (responsiveColsChange)="cols = $event" style="margin-top: 2px">
+<mat-progress-bar *ngIf="loading"  color="warn" mode="indeterminate">
+  </mat-progress-bar>
+<mat-grid-list  [responsive] ="responsive" #gridlistcontainer rowHeight="344px" (responsiveColsChange)="cols = $event" >
     <mat-grid-tile [colspan]="1" [rowspan]="2" style="overflow:auto;">
         <mat-card class="example-personal-info-card mat-elevation-z8" style="min-height: 92%">
             <mat-card-header>

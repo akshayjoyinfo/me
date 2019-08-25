@@ -12,7 +12,8 @@
   {
     "label": "Address",
     "value": "Flat 104, Oceanus Lily Apartment, Hoysala Nagar, Ramamurthy Nagar, Bangalore, Karnataka, India -560016",
-    "icon": "home"
+    "icon": "home",
+    "textArea": true
   },
   {
     "label": "Age",
