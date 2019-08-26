@@ -12,6 +12,7 @@
 
       <a *ngFor="let item of myWorkRoutes"
         mat-list-item
+        (click)="!(media.isActive('xs') || media.isActive('sm'))?null:navigationSidenav.close()"
         [routerLink]="[item.route]"
         routerLinkActive="list-item-active">
         <mat-icon matListIcon class="app-nav-list-icon"> {{ item.icon }} </mat-icon>

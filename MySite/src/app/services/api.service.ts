@@ -4,6 +4,7 @@ import { SkillHeader } from '../shared/models/skill-header.model';
 import { HttpErrorResponse, HttpClient } from '@angular/common/http';
 import { catchError, tap, map } from 'rxjs/operators';
 import { PersonalProfile } from '../shared/models/personal-profile.model';
+import { Experience } from '../shared/models/experience.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,7 @@ export class ApiService {
   private skillHeadersUrl = 'assets/skill-headers.json';
   private githubLangsUrl = 'assets/github-langs.json';
   private personalProfileUrl = 'assets/personal-profile.json';
+  private experienceUrl = 'assets/experiences.json';
   constructor(private http: HttpClient) {
   }
 
@@ -34,6 +36,13 @@ export class ApiService {
 
   getProfileDetails(): Observable<PersonalProfile[]> {
     return this.http.get<PersonalProfile[]>(this.personalProfileUrl).pipe(
+      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      catchError(this.handleError)
+    );
+  }
+
+  getExperiences(): Observable<Experience[]>{
+    return this.http.get<Experience[]>(this.experienceUrl).pipe(
       tap(data => console.log('API Service ' + JSON.stringify(data))),
       catchError(this.handleError)
     );

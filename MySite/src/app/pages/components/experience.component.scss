@@ -1,78 +1,51 @@
-.timeline-block {
-  width: -webkit-calc(50% + 8px);
-  width: -moz-calc(50% + 8px);
-  width: calc(50% + 8px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  justify-content: space-between;
-  clear: both;
+.container {
+	max-width: 1024px;
+	width: 90%;
+	margin: 0 auto;
 }
 
-.timeline-block-right {
-  float: right;
-}
+$border-color: #536878;
 
-.timeline-block-left {
-  float: left;
-  direction: rtl
-}
+.timeline-item {
+	padding: 3em 2em 2em;
+	position: relative;
+	color: rgba(black, .7);
+	border-left: 2px solid $border-color;
 
-.marker {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 2px solid #F5F7FA;
-  background: #4FC1E9;
-  margin-top: 10px;
-  z-index: 9999
-}
+	p {
+		font-size: 1rem;
+	}
 
-.timeline-content {
-  width: 95%;
-  padding: 0 15px;
-  color: #666
-}
+	&::before {
+		content: attr(date-is);
+		position: absolute;
+		left: 2em;
+		font-weight: bold;
+		top: 1em;
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: .785rem;
+	}
 
-.timeline-content h3 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 25px;
-  font-weight: 500
-}
+	&::after {
+		width: 10px;
+		height: 10px;
+		display: block;
+		top: 1em;
+		position: absolute;
+		left: -7px;
+		border-radius: 10px;
+		content: '';
+		border: 2px solid $border-color;
+		background: white;
+	}
 
-.timeline-content span {
-  font-size: 15px;
-  color: #a4a4a4;
-}
-
-.timeline-content p {
-  font-size: 14px;
-  line-height: 1.5em;
-  word-spacing: 1px;
-  color: #888;
-}
-
-
-@media screen and (max-width: 768px) {
-  .container:before {
-     left: 8px;
-     width: 2px;
-  }
-  .timeline-block {
-     width: 100%;
-     margin-bottom: 30px;
-  }
-  .timeline-block-right {
-     float: none;
-  }
-
-  .timeline-block-left {
-     float: none;
-     direction: ltr;
-  }
+	&:last-child {
+		border-image: linear-gradient(
+			to bottom,
+			$border-color 60%,
+			rgba($border-color, 0)) 1 100%
+		;
+	}
 }
