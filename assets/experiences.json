@@ -1,0 +1,33 @@
+[
+  {
+    "company": "JP Morgan Chase & Co, Bengaluru, India",
+    "time": "April 2019 - Present",
+    "position": "Associate",
+    "skills": [".NET", ".NET CORE", "Angular", "MicroService", "MQ"],
+    "description": "Working as Full Stack end to end Developer"
+  },
+  {
+    "company": "OPTUM Global Solutions (UNITED HEALTH GROUP COMPANY)",
+    "time": "September 2017 - April 2019",
+    "position": "Senior Software Engineer ",
+    "skills": [ "AZURE", "ASP.NET WebForms WEB API Migration", "SQL Server", "Oracle", "Telerik/KendoUI",
+                "Salesforce API"],
+    "clients": "United HealthCare",
+    "description": "Working as Individual Contributor in OPTUM Imapct Pro Health Care Project. Quick learner , I was able to bring new features/suggestions by understanding the product within a small interval of time. Developed/Enhanced Projects modules irrespective of Tech stacks. Major contribution towards MVC, ASP.NET, WEB API, EF. Revamped existing DB setup completely, introduced Fluent Migrator DB setup (Any DB at any time with just one click in Jenkins job)  Also played crucial part of Cloud integration Research for Impact Pro projects. DB on AWS/AZURE instance, Deployable package AWS/AZURE instance (using WebDeploy 3.5 + python scripts). Designed/implemented EPICS(those EPICS were on backlog for a long time(5+ years). Always thought about solution, not for the technology stacks. Processing Engine Optimization achieved for 80% by doing just fixing the post processing operation."
+  },
+  {
+    "company": "DeltaX, Digital Marketing Platform, Bengaluru, India",
+    "time": "July 2014 - August 2017",
+    "position": "Senior Product Developer",
+    "skills": ["AdTech Engineering", "Asp.Net WebApi", "AWS", "AZURE", "Windows Service", "Redis", "Azure Functions",
+      "Functional Programming", "Attribution (View, Click, Impressions)", "Adwords","Facebook","DeltaXTracking" ],
+    "description": "Working as Tracking Team Lead for DeltaX. Developing Applications to aid users in various application areas using.NET(4.5), Entity Framework(5.0), ASP.Net MVC 4, Windows Service, WCF, SQL Server 2008 (Tentative DB Architecture), Bootstrap, Jquery, Ext JS, Amazon S3, Kinesis, APIs - Facebook, Bing, Adwords, Tortoise SVN, Deployment – Jenkins and Development Framework - Scrum. Meeting the SLA’s set by the client, identifying the root cause of the problems in the application as part of application stabilization and allocating work allocation and responsible for scheduling of task. Design and developing workflow program and handling various phases of application development. Working with the project team and the client for establishing achievable requirements. Demonstrated proficiency in Quality processes followed through the complete software development lifecycle of Project. Deftly coordinate with onsite for timely delivery of project & query resolutions. Direct support to the Software Development department in the areas of software/application architecture, development, design, and independent analysis and problem resolution"
+  },
+  {
+    "company": "NTT DATA GLOBAL DELIVERY SERVICES, Bengaluru, India",
+    "time": "February 2012 - July 2014",
+    "position": "Software Engineer",
+    "skills": [".NET 2.0", ".NET 3.5", ".NET 4.0", "VBA to DLL", "Infragistics Migration", "WCF","MVC4", "SQL Server"],
+    "description": "Gathered & defined business requirements while managing the risks to improve business processes and translating the requirements into systems solution by preparing functional specifications and technical requirement document. Coordinated to ensure project completion within specified quality, cost and timelines and ensuring strict observance thereof including handling of project closeout. Gained exposure in the end-to-end development of software products from requirement analysis to system study, designing, coding, testing and debugging. Interacting with clients for requirements & designing. Handled a complete range of project activities right from conceptualization, testing, and maintenance. Conducted Case / System / Process Study for project planning, scoping, estimation, tracking. Responsible for Client interaction, defect tracking, work allocation, estimation, risk mitigation, Time reporting and working with quality assurance teams. Delivered and implemented the project as per scheduled milestones. Supervised smooth implementation of the project and extending post-implementation, application maintenance, and technical support to end users."
+  }
+]
