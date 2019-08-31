@@ -12,8 +12,8 @@
             <mat-chip *ngFor="let skill of exp.skills">{{skill}}</mat-chip>
             </mat-chip-list>
         </p>
-        <p>
-          {{exp.description}}
+        <p [innerHTML]="exp.description">
+          
         </p>
       </div>
     </div>

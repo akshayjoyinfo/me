@@ -20,6 +20,13 @@ $sidenav-width: 320px; // 240px;
 
 .toolbar-title {
   margin: 0 16px 0 16px;
+  font-weight: bolder;
+  line-height: 200%;
+  letter-spacing: 3px;
+}
+
+.typing{
+  letter-spacing: 2px;
 }
 
 .mat-subheader {

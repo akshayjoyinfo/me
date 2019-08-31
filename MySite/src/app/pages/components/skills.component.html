@@ -1,0 +1,77 @@
+<mat-progress-bar *ngIf="loading"  color="warn" mode="indeterminate">
+</mat-progress-bar>
+<div class="container">
+<div class="row">
+    <div class="column">
+      <mat-card class="mat-elevation-z10">
+        <mat-card-header>
+          <mat-card-title>Programming Languages</mat-card-title>
+          <mat-card-subtitle>2010-Present</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <canvas id="languages">{{ProgrammingLangugaesRadarChart}}</canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="column">
+      <mat-card class="mat-elevation-z10">
+        <mat-card-header>
+          <mat-card-title>FrontEnd</mat-card-title>
+          <mat-card-subtitle>2010-Present</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <canvas id="frontend">{{FrontEndChart}}</canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <mat-card class="mat-elevation-z10">
+        <mat-card-header>
+          <mat-card-title>Databases</mat-card-title>
+          <mat-card-subtitle>2010-Present</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <canvas id="databases">{{DatabaseChart}}</canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="column">
+      <mat-card class="mat-elevation-z10">
+        <mat-card-header>
+          <mat-card-title>C# Skills</mat-card-title>
+          <mat-card-subtitle>2010-Present</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <canvas id="csharp">{{CSharpSkillsChart}}</canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <mat-card class="mat-elevation-z10">
+        <mat-card-header>
+          <mat-card-title>DevOps</mat-card-title>
+          <mat-card-subtitle>2010-Present</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <canvas id="devops">{{DevOpsSkilsChart}}</canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="column">
+      <mat-card class="mat-elevation-z10">
+        <mat-card-header>
+          <mat-card-title>Soft Sills</mat-card-title>
+          <mat-card-subtitle>2010-Present</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <canvas id="softskills">{{softSkillsChart}}</canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

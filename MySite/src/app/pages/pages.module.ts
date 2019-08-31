@@ -8,9 +8,11 @@ import { PersonalComponent } from './components/personal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExperienceComponent } from './components/experience.component';
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+import { SkillsComponent } from './components/skills.component';
+
 
 @NgModule({
-  declarations: [AboutMeComponent, PersonalComponent, ExperienceComponent],
+  declarations: [AboutMeComponent, PersonalComponent, ExperienceComponent, SkillsComponent],
   imports: [
     CommonModule,
     MaterialModule,

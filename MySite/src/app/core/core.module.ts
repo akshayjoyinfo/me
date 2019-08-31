@@ -14,8 +14,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ObserversModule } from '@angular/cdk/observers';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 
-
-
 @NgModule({
   declarations: [ NavComponent, NavigationBarComponent ],
   imports: [
