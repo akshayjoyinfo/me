@@ -4,6 +4,7 @@ import { AboutMeComponent } from './pages/components/about-me.component';
 import { PersonalComponent } from './pages/components/personal.component';
 import { ExperienceComponent } from './pages/components/experience.component';
 import {SkillsComponent} from './pages/components/skills.component';
+import { ProjectsComponent } from './pages/components/projects/projects.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'skills',
     component: SkillsComponent,
+  },
+  {
+    path: 'projects',
+    component: ProjectsComponent,
   },
   {
     path: '**',

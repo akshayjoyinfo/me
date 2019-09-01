@@ -87,9 +87,9 @@ export class SkillsComponent implements OnInit, AfterViewInit {
       xAxes: [{
         display: true,
         ticks: {
-          fontSize: 12,
+          fontSize: 10,
           minor: {
-            fontSize: 12
+            fontSize: 10
           }
         }
       }],
@@ -108,7 +108,6 @@ export class SkillsComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit() {
-    this.loading = false;
     this.ProgrammingLangugaesRadarChart = new Chart('languages', {
       type: 'radar',
       data: {
@@ -277,6 +276,7 @@ export class SkillsComponent implements OnInit, AfterViewInit {
         }
       }
     });
+    this.loading = false;
   }
   ngAfterViewInit(): void {
 

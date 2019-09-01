@@ -1,0 +1,34 @@
+[
+  {
+    "product": "UNISYS InfoImage Enterprise Content Manager",
+    "company": "NTTDATA",
+    "client" : "UNISYS",
+    "duration": "2012-2014",
+    "designation" : "Software Engineer",
+    "responsibilities": "Gained exposure in the end-to-end development of software products from requirement analysis to system study, designing, coding, testing and debugging. Interacting with clients for requirements & designing. Handled a complete range of project activities right from conceptualization, testing, and maintenance. Conducted Case / System / Process Study for project planning, scoping, estimation, tracking. Responsible for Client interaction, defect tracking, work allocation, estimation, risk mitigation, Time reporting and working with quality assurance teams. Delivered and implemented the project as per scheduled milestones. Supervised smooth Implementation of the project and extending post-implementation, application maintenance, and technical support to end users",
+    "link": "https://www.unisys.com/offerings/industry-solutions/infoimage",
+    "imageLink": "unisys-header-image",
+    "technology": ["C#", "VBA", "Infragistics 12.0", "Sharepoint 2010", ".NET 3.5", ".NET 4.0",
+                  "InfoPath 2010", "ABBYY API", "Windows Service", "DCOM", "VB.NET",
+                   "WebForms", ".NET MVC", "ExtJS"],
+    "description": "Unisys InfoImage is an Enterprise Content Management (ECM) platform with integrated Business Process Management (BPM/workflow) and Records Management (RM) that is ideally suited for business-critical applications that involve high document volumes arriving as paper, electronic files, digital assets, and internet transactions."
+
+  },
+  {
+    "product": "DeltaX Adbox Pro",
+    "company": "DeltaX",
+    "client" : "DeltaX",
+    "duration": "2014-2017",
+    "designation" : "Senior Product Developer / Tracking Team Lead",
+    "responsibilities": "Working as Tracking Team Lead for DeltaX. Developing Applications to aid users in various application areas using.NET(4.5), Entity Framework(5.0), ASP.Net MVC 4, Windows Service, WCF, SQL Server 2008 (Tentative DB Architecture), Bootstrap, Jquery, Ext JS, Amazon S3, Kinesis, APIs - Facebook, Bing, Adwords, Tortoise SVN, Deployment – Jenkins and Development Framework – Scrum. Meeting the SLA’s set by the client, Working with the project team and the client for establishing achievable requirements. Demonstrated proficiency in Quality processes followed through the complete software development lifecycle of Project. Deftly coordinate with onsite for timely delivery of project & query resolutions. Direct support to the Software Development department in the areas of software/application architecture, development, design, and independent analysis and problem resolution",
+    "link": "https://www.unisys.com/offerings/industry-solutions/infoimage",
+    "imageLink": "deltax-header-image",
+    "technology": ["C#", ".NET 4.0", ".NET 4.5", "SignalR", "Redis", "AZURE",
+                  "AZURE Migration", "Azure-AppService", "Azure-SQL Server", "SQL Server", "Dapper",
+                  "Azure-ElasticPool", "Bootstrap",
+                   "WebApi", "AdTech Attribution", "Clicks/Views/Conversion Processing", "AWS S3",
+                  "SPARK", "AWS Lambda", "AWS DynamoDB","AWS EC2"],
+    "description": "DeltaX is the pioneering cross-channel digital advertising platform. The company helps ad agencies and performance marketers buy, track, attribute, optimize and report media across Search, Social, Display, Mobile and Video ads more efficiently by taking a unified data and automation driven approach. The cloud-based platform leverages big data, user behavior and machine learning algorithms to improve performance across the business funnel of advertisers."
+
+  }
+]

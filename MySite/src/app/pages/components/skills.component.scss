@@ -1,6 +1,35 @@
 * {
   box-sizing: border-box;
 }
+.programming-languages-header-image{
+  background-image: url('https://img.devrant.com/devrant/rant/r_1757662_DNuPT.jpg');
+  background-size: cover;
+}
+.frontend-header-image {
+  background-image: url('https://cdn2.iconfinder.com/data/icons/web-design-and-development-2-7/128/106-512.png');
+  background-size: cover;
+}
+
+.databases-header-image {
+  background-image: url('https://miro.medium.com/max/1060/1*1fc2dDk1RywRv6nDw_EE_A.png');
+  background-size: cover;
+}
+
+.csharp-header-image {
+  background-image: url('https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png');
+  background-size: cover;
+}
+
+
+.devops-header-image {
+  background-image: url('https://www.atlassian.com/blog/wp-content/uploads/devopsloop.png');
+  background-size: cover;
+}
+
+.soft-skill-header-image{
+  background-image: url('https://uploads-ssl.webflow.com/5aaee34b7fb511129d1ffaa7/5ce30834b284e188e3241472_soft%20skills%20expert.png');
+  background-size: cover;
+}
 .container{
   height:90%;
   min-height: 90%;

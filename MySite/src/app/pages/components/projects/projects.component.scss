@@ -1,0 +1,51 @@
+.container{
+  height:90%;
+  min-height: 90%;
+  max-height: 90%;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 49%;
+  padding: 2px;
+  margin:2px;
+   /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.unisys-header-image {
+  background-image: url('https://media.trustradius.com/vendor-logos/ih/uf/FI6S542IVPJK-180x180.JPEG');
+  background-size: cover;
+
+}
+//https://s3.amazonaws.com/deltax.production/AllFiles/Uploads/Logos/8bc8d68a-6305-480d-a694-57858b4369e8_dx_manage_600px_Scaled.png
+
+.deltax-header-image {
+  background-image: url('https://s3.amazonaws.com/deltax.production/AllFiles/Uploads/Logos/8bc8d68a-6305-480d-a694-57858b4369e8_dx_manage_600px_Scaled.png');
+  background-size: cover;
+
+}
+
+.mat-card-subtitle
+{
+  font-weight: bolder;
+}
+
+.mat-card-content
+{
+  margin: 5px;
+  text-align: justify;
+}

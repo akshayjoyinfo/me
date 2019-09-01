@@ -1,0 +1,30 @@
+<mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate">
+</mat-progress-bar>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left">
+  <mat-card class="example-card mat-elevation-z10" style="margin:5px" *ngFor="let project of projects" fxFlex="48"
+    fxFlex.xs="100">
+    <mat-card-header>
+      <div mat-card-avatar [ngClass]="project.imageLink"></div>
+      <mat-card-title>{{project.product}}</mat-card-title>
+      <mat-card-subtitle>Duration: {{project.duration}}</mat-card-subtitle>
+      <mat-card-subtitle>Role: {{project.designation}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <p>
+        <mat-chip-list aria-label="Technologies">
+          <mat-chip *ngFor="let tech of project.technology">{{tech}}</mat-chip>
+        </mat-chip-list>
+      </p>
+      <b>About: </b>
+      <i>
+          {{project.description}}
+      </i>
+
+      <p>
+        <b>Description: </b>
+        {{project.responsibilities}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
