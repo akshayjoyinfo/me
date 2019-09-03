@@ -1,11 +1,11 @@
 <mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate">
 </mat-progress-bar>
-<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left">
-  <mat-card class="example-card mat-elevation-z10" style="margin:5px" *ngFor="let project of projects" fxFlex="48"
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left" style="margin-top:3px">
+  <mat-card class="example-card mat-elevation-z10" style="margin:3px" *ngFor="let project of projects" fxFlex="49"
     fxFlex.xs="100">
     <mat-card-header>
       <div mat-card-avatar [ngClass]="project.imageLink"></div>
-      <mat-card-title>{{project.product}}</mat-card-title>
+      <mat-card-title (click) ="goToLink(project.link)"><b>{{project.product}}</b>&nbsp;<mat-icon aria-hidden="false">open_in_new</mat-icon></mat-card-title>
       <mat-card-subtitle>Duration: {{project.duration}}</mat-card-subtitle>
       <mat-card-subtitle>Role: {{project.designation}}</mat-card-subtitle>
     </mat-card-header>
@@ -25,6 +25,15 @@
         <b>Description: </b>
         {{project.responsibilities}}
       </p>
+      <div *ngIf="project.applications">
+        <mat-divider></mat-divider>
+        <p>
+          <b>Projects: </b>
+          <mat-chip-list aria-label="Projects">
+            <mat-chip (click) ="goToLink(app.link)" class="application-chip" *ngFor="let app of project.applications"><b>{{app.name}}</b>&nbsp;&nbsp;&nbsp;<mat-icon aria-hidden="false">open_in_new</mat-icon></mat-chip>
+          </mat-chip-list>
+        </p>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>

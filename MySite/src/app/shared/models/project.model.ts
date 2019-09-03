@@ -1,3 +1,8 @@
+export class Application {
+  name: string;
+  link: string;
+}
+
 export class Project {
   product: string;
   company: string;
@@ -9,4 +14,5 @@ export class Project {
   imageLink: string;
   technology: string[];
   description: string;
+  applications: Application[];
 }

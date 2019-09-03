@@ -39,13 +39,37 @@
 
 }
 
+
+.optum-header-image {
+  background-image: url('https://pbs.twimg.com/profile_images/590542460306108416/tSdgmqpE_400x400.jpg');
+  background-size: cover;
+
+}
+
+
+.bosch-header-image {
+  background-image: url('https://connectedautomateddriving.eu/wp-content/uploads/2018/11/bosch-logo.jpg');
+  background-size: cover;
+
+}
+
+
+.mat-card-title{
+  cursor: pointer;
+}
 .mat-card-subtitle
 {
   font-weight: bolder;
 }
-
+.mat-icon {
+  font-size: 18px;
+}
 .mat-card-content
 {
   margin: 5px;
   text-align: justify;
+}
+
+.application-chip{
+  cursor: pointer;
 }
