@@ -39,7 +39,7 @@ export class NavComponent implements OnInit, OnDestroy {
     }, {
       icon: 'perm_identity',
       route: 'personal',
-      title: 'Personal',
+      title: 'Contact',
     }
   ];
 
@@ -56,10 +56,6 @@ export class NavComponent implements OnInit, OnDestroy {
       icon: 'work',
       route: 'projects',
       title: 'Projects',
-    }, {
-      icon: 'account_box',
-      route: 'opportunities',
-      title: 'Opportunities',
     }
   ];
 
@@ -69,7 +65,7 @@ export class NavComponent implements OnInit, OnDestroy {
   }
 
   constructor(public media: MediaObserver, private router: Router) {
-    this.router.events.subscribe((event: Event) => {
+    this.router.events.subscribe(event => {
       switch (true) {
         case event instanceof NavigationStart: {
           this.delay(25000).then(dt => {
@@ -79,7 +75,11 @@ export class NavComponent implements OnInit, OnDestroy {
           break;
         }
 
-        case event instanceof NavigationEnd:
+        case event instanceof NavigationEnd: {
+          (window as any).ga('set', 'page', (event as NavigationEnd).urlAfterRedirects);
+          (window as any).ga('send', 'pageview');
+        }
+                                             break;
         case event instanceof NavigationCancel:
         case event instanceof NavigationError: {
           this.loading = false;

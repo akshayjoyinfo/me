@@ -17,12 +17,13 @@
           </mat-form-field>
         </div>
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>Facbook</button>
-        <button mat-button>LinkedIn</button>
-        <button mat-button>Twitter</button>
-        <button mat-button>ProjectEuler</button>
-        <button mat-button>Github</button>
+      <mat-card-actions style="text-align: center">
+        <button mat-raised-button (click)="goToLink('https://www.facebook.com/akshayjoyin')"><i class="fab fa-facebook fa-2x"></i></button>
+        <button mat-raised-button (click)="goToLink('https://www.linkedin.com/in/akshay-joy-86299341/')"><i class="fab fa-linkedin fa-2x"></i></button>
+        <button mat-raised-button (click)="goToLink('https://twitter.com/akshaypjoy')"><i class="fab fa-twitter fa-2x"></i></button>
+        <button mat-raised-button (click)="goToLink('https://github.com/akshayjoyinfo')"><i class="fab fa-github fa-2x"></i></button>
+        <button mat-raised-button (click)="goToLink('https://stackoverflow.com/users/1802203/akshay-joy')"><i class="fab fa-stack-overflow fa-2x"></i></button>
+        <button mat-raised-button (click)="goToLink('https://www.goodreads.com/user/show/20939909-akshay-joy')"><i class="fab fa-goodreads fa-2x"></i></button>
       </mat-card-actions>
     </mat-card>
 
