@@ -5,6 +5,7 @@ import { PersonalComponent } from './pages/components/personal.component';
 import { ExperienceComponent } from './pages/components/experience.component';
 import {SkillsComponent} from './pages/components/skills.component';
 import { ProjectsComponent } from './pages/components/projects/projects.component';
+import { ContactComponent } from './pages/components/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: '**',

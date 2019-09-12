@@ -1,0 +1,40 @@
+<mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate">
+</mat-progress-bar>
+<mat-grid-list rowHeight="680px" cols=1 style="margin: 2px">
+  <mat-grid-tile [colspan]="1" [rowspan]="1" style="overflow:auto">
+    <mat-card class="personal-card">
+      <mat-card-header>
+        <div mat-card-avatar class="personal-header-image"></div>
+        <mat-card-title><b>Contact Akshay</b></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+
+
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+              <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Your Name" formControlName="name" />
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Email" formControlName="email" />
+            </mat-form-field>
+            <mat-form-field>
+
+              <textarea rows="10" cols="50" matInput placeholder="Message" formControlName="emailMessage"></textarea>
+            </mat-form-field>
+
+
+          </div>
+          <div style="text-align: right">
+              <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.valid">Send Message</button>
+          </div>
+          </form>
+
+      </mat-card-content>
+
+    </mat-card>
+
+  </mat-grid-tile>
+
+</mat-grid-list>

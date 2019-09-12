@@ -10,10 +10,11 @@ import { ExperienceComponent } from './components/experience.component';
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 import { SkillsComponent } from './components/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
-  declarations: [AboutMeComponent, PersonalComponent, ExperienceComponent, SkillsComponent, ProjectsComponent],
+  declarations: [AboutMeComponent, PersonalComponent, ExperienceComponent, SkillsComponent, ProjectsComponent, ContactComponent],
   imports: [
     CommonModule,
     MaterialModule,

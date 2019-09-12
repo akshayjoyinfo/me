@@ -1,0 +1,34 @@
+.personal-card {
+  max-width: 60%;
+  min-width: 60%;
+}
+
+
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.example-container form {
+  margin-bottom: 20px;
+}
+
+.example-container form > * {
+  margin: 5px 0;
+}
+
+.example-container .mat-radio-button {
+  margin: 0 12px;
+}
+
+.profile-info-icon{
+  margin-right: 10px;
+}
