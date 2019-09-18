@@ -5,7 +5,8 @@
     "college": "Sahrdaya College Of Engineering & Technology",
     "place": "Thrissur, Kerala, India",
     "board": "University of Calicut",
-    "time": "2007-2011"
+    "time": "2007-2011",
+    "icon": "fa fa-university fa-1x"
   },
   {
     "type": "Higher Secondary School (+2)",
@@ -13,14 +14,16 @@
     "college": "St.Antony's H.S.S Pudukad",
     "place": "Thrissur, Kerala, India",
     "board": "Board of Higher Secondary Examination, Kerala",
-    "time": "2005-2007"
+    "time": "2005-2007",
+    "icon": "fa fa-school fa-1x"
   },
   {
     "type": "Secondary School Leaving Certificate (SSLC)",
-    "major": "Common / Basic School",
+    "major": "Basic Education",
     "college": "Holy Cross High School Mapranam",
     "place": "Thrissur, Kerala, India",
     "board": "Board of Public Examination, Kerala",
-    "time": "2005"
+    "time": "2005",
+    "icon": "fa fa-school fa-1x"
   }
 ]
