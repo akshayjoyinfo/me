@@ -11,10 +11,13 @@ import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 import { SkillsComponent } from './components/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { EducationComponent } from './components/education/education.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 
 @NgModule({
-  declarations: [AboutMeComponent, PersonalComponent, ExperienceComponent, SkillsComponent, ProjectsComponent, ContactComponent],
+  declarations: [AboutMeComponent, PersonalComponent, ExperienceComponent, SkillsComponent,
+    ProjectsComponent, ContactComponent, EducationComponent, ResumeComponent],
   imports: [
     CommonModule,
     MaterialModule,

@@ -57,9 +57,17 @@ export class NavComponent implements OnInit, OnDestroy {
       route: 'projects',
       title: 'Projects',
     },{
+      icon: 'school',
+      route: 'education',
+      title: 'Education',
+    },{
+      icon: 'cloud_download',
+      route: 'resume',
+      title: 'Resume',
+    },{
       icon: 'send',
       route: 'contact',
-      title: 'Leave a Message'
+      title: 'Leave Me a Message'
     }
   ];
 

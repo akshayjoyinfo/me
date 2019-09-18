@@ -1,0 +1,22 @@
+<mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate">
+</mat-progress-bar>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left" style="margin-top:3px">
+  <mat-card class="example-card mat-elevation-z10" style="margin:3px" *ngFor="let edu of education" fxFlex="100"
+    fxFlex.xs="100">
+    <mat-card-header>
+      <mat-card-title><i [class]="edu.icon" aria-hidden="true"></i>&nbsp;<b>{{edu.major}} &nbsp; - {{edu.type}}</b></mat-card-title>
+      <mat-card-subtitle>{{edu.place}}</mat-card-subtitle>
+      <mat-card-subtitle>{{edu.board}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        <mat-chip-list aria-label="Technologies">
+          <mat-chip>{{edu.college}}</mat-chip>
+
+          <mat-chip>{{edu.time}}</mat-chip>
+        </mat-chip-list>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

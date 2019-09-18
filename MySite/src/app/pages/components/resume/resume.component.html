@@ -1,0 +1,22 @@
+<mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate">
+</mat-progress-bar>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left" style="margin-top:3px">
+  <mat-card class="example-card mat-elevation-z10" style="margin:3px" fxFlex="100"
+    fxFlex.xs="100">
+    <mat-card-header>
+      <mat-card-title><b>Resume Akshay P Joy</b></mat-card-title>
+      <mat-card-subtitle>Last Updated: 14 September, 2019</mat-card-subtitle>
+      
+    </mat-card-header>
+    
+    <mat-card-content>
+      <p>
+        
+      </p>
+    </mat-card-content>
+    <mat-card-actions style="text-align: center">
+      <button class="mat-elevation-z5" mat-raised-button (click)="goToLink('https://drive.google.com/file/d/1-_x_RqTUUWs-ljb1eR_sukvAiXT7Jm86')"><i class="fas fa-file-word fa-2x"></i></button>
+      <button class="mat-elevation-z5" mat-raised-button (click)="goToLink('https://drive.google.com/open?id=1iWm6ATcBhdk0yXzcwuSHcogfD66kAHT9')"><i class="fas fa-file-pdf fa-2x"></i></button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -6,6 +6,8 @@ import { catchError, tap, map } from 'rxjs/operators';
 import { PersonalProfile } from '../shared/models/personal-profile.model';
 import { Experience } from '../shared/models/experience.model';
 import { Project } from '../shared/models/project.model';
+import { EducationComponent } from '../pages/components/education/education.component';
+import { Education } from '../shared/models/education.model';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +21,7 @@ export class ApiService {
   private personalProfileUrl = 'assets/personal-profile.json';
   private experienceUrl = 'assets/experiences.json';
   private projectsUrl = 'assets/projects.json';
+  private educationUrl = 'assets/education.json';
   constructor(private http: HttpClient) {
   }
 
@@ -52,6 +55,13 @@ export class ApiService {
 
   getProjects(): Observable<Project[]>{
     return this.http.get<Project[]>(this.projectsUrl).pipe(
+      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      catchError(this.handleError)
+    );
+  }
+
+  getEducation(): Observable<Education[]>{
+    return this.http.get<Education[]>(this.educationUrl).pipe(
       tap(data => console.log('API Service ' + JSON.stringify(data))),
       catchError(this.handleError)
     );
