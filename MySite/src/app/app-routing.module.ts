@@ -39,6 +39,10 @@ const routes: Routes = [
     component: EducationComponent
   },
   {
+    path: 'blog',
+    loadChildren: './blogs/blog.module#BlogModule'
+  },
+  {
     path: 'resume',
     component: ResumeComponent
   },
