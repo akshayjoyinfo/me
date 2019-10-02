@@ -54,4 +54,10 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
-</urlset> 
+   <url>
+    <loc>https://akshayjoyinfo.github.io/me/#/blog/post/hello-world-blog</loc>
+      <lastmod>2019-10-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1</priority>
+   </url>
+</urlset>
