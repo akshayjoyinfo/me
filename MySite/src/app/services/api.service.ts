@@ -8,6 +8,7 @@ import { Experience } from '../shared/models/experience.model';
 import { Project } from '../shared/models/project.model';
 import { EducationComponent } from '../pages/components/education/education.component';
 import { Education } from '../shared/models/education.model';
+import { Blog } from '../shared/models/blog.model';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,7 @@ export class ApiService {
   private experienceUrl = 'assets/experiences.json';
   private projectsUrl = 'assets/projects.json';
   private educationUrl = 'assets/education.json';
+  private blogurl = 'assets/blog-list.json';
   constructor(private http: HttpClient) {
   }
 
@@ -62,6 +64,13 @@ export class ApiService {
 
   getEducation(): Observable<Education[]>{
     return this.http.get<Education[]>(this.educationUrl).pipe(
+      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      catchError(this.handleError)
+    );
+  }
+
+  getBlogList(): Observable<Blog[]>{
+    return this.http.get<Blog[]>(this.blogurl).pipe(
       tap(data => console.log('API Service ' + JSON.stringify(data))),
       catchError(this.handleError)
     );

@@ -1,1 +1,11 @@
-<div markdown [src]="post"></div>
+<mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate">
+</mat-progress-bar>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left" style="margin:10px">
+  <mat-card  class="example-card mat-elevation-z10" style="margin:3px" fxFlex="100"
+  fxFlex.xs="100">
+  <mat-card-content>
+    <div markdown [src]="post"></div>
+  </mat-card-content>
+  </mat-card>
+
+</div>
