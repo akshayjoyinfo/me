@@ -29,49 +29,49 @@ export class ApiService {
 
   getAboutSkillHeaders(): Observable<SkillHeader[]> {
     return this.http.get<SkillHeader[]>(this.skillHeadersUrl).pipe(
-      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      tap(data => console.log('API Service -getAboutSkillHeaders')),
       catchError(this.handleError)
     );
   }
 
   getGithubLangugaes(): Observable<any[]> {
     return this.http.get<SkillHeader[]>(this.githubLangsUrl).pipe(
-      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      tap(data => console.log('API Service - getGithubLangugaes')),
       catchError(this.handleError)
     );
   }
 
   getProfileDetails(): Observable<PersonalProfile[]> {
     return this.http.get<PersonalProfile[]>(this.personalProfileUrl).pipe(
-      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      tap(data => console.log('API Service getProfileDetails')),
       catchError(this.handleError)
     );
   }
 
   getExperiences(): Observable<Experience[]>{
     return this.http.get<Experience[]>(this.experienceUrl).pipe(
-      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      tap(data => console.log('API Service getExperiences')),
       catchError(this.handleError)
     );
   }
 
   getProjects(): Observable<Project[]>{
     return this.http.get<Project[]>(this.projectsUrl).pipe(
-      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      tap(data => console.log('API Service getProjects')),
       catchError(this.handleError)
     );
   }
 
   getEducation(): Observable<Education[]>{
     return this.http.get<Education[]>(this.educationUrl).pipe(
-      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      tap(data => console.log('API Service getEducation')),
       catchError(this.handleError)
     );
   }
 
   getBlogList(): Observable<Blog[]>{
     return this.http.get<Blog[]>(this.blogurl).pipe(
-      tap(data => console.log('API Service ' + JSON.stringify(data))),
+      tap(data => console.log('API Service getBlogList')),
       catchError(this.handleError)
     );
   }

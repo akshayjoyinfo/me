@@ -30,7 +30,6 @@ export class AboutMeComponent implements OnInit,  AfterViewInit {
    }
 
    ngAfterViewInit(): void {
-    console.log(window.innerHeight);
   }
 
 

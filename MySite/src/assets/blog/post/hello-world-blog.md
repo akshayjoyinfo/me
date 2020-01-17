@@ -1,7 +1,6 @@
 # Hello World using Angular Markdown Files
 ### Hello World
-Posted by [Akshay Joy](mailto:akshayjoyinfo@gmail.com), ASSOCIATE @ JP Morgan Chase & Co On 
-####  2019-Oct-02
+Posted by [Akshay Joy](mailto:akshayjoyinfo@gmail.com), On 2019-Oct-02
 
 <p align="center">
   <img alt="Ngx-Markdown Logo" src="https://github.com/jfcere/ngx-markdown/raw/master/demo/src/assets/ngx-markdown.png">

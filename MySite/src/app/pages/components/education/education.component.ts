@@ -14,7 +14,6 @@ export class EducationComponent implements OnInit {
   constructor(private apiService: ApiService) {
     this.apiService.getEducation().subscribe(
       profile => {
-        console.log(profile);
         this.education = profile;
         this.loading = false;
       },

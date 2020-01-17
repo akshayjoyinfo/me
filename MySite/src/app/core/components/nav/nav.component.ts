@@ -63,7 +63,7 @@ export class NavComponent implements OnInit, OnDestroy {
     },{
       icon: 'library_books',
       route: 'blog',
-      title: 'Blogs',
+      title: 'Blog',
     },{
       icon: 'cloud_download',
       route: 'resume',
@@ -85,7 +85,6 @@ export class NavComponent implements OnInit, OnDestroy {
       switch (true) {
         case event instanceof NavigationStart: {
           this.delay(25000).then(dt => {
-            console.log('done');
           });
           this.loading = true;
           break;

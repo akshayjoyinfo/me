@@ -36,11 +36,13 @@ import {
 } from '@angular/material';
 
 import { CdkTableModule } from '@angular/cdk/table';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatGridListResponsiveModule } from './mat-grid-responsive-list/mat-grid-responsive-list.module';
 
 @NgModule({
     imports: [
         CdkTableModule,
+        ScrollingModule,
         MatAutocompleteModule,
         MatButtonModule,
         MatButtonToggleModule,
@@ -78,6 +80,7 @@ import { MatGridListResponsiveModule } from './mat-grid-responsive-list/mat-grid
     ],
     exports: [
         CdkTableModule,
+        ScrollingModule,
         MatAutocompleteModule,
         MatButtonModule,
         MatButtonToggleModule,

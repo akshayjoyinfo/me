@@ -1,22 +1,21 @@
 <mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate">
 </mat-progress-bar>
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="left" style="margin-top:3px">
-  <mat-card routerLink="/blog/post/hello-world-blog" class="example-card mat-elevation-z10" style="margin:3px" *ngFor="let blog of bloglist" fxFlex="49"
-    fxFlex.xs="100">
-    <mat-card-header>
-      <mat-card-title><b>{{blog.header}}</b></mat-card-title>
-      <mat-card-subtitle>Posted By: {{blog.author}} On {{blog.createdat | date: 'MMM-yy'}}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image [src]="blog.headerimage" [alt]="blog.header">
+    <mat-card routerLink="/blog/post/hello-world-blog" class="example-card mat-elevation-z10" style="margin:3px" *ngFor="let blog of bloglist" fxFlex="49" fxFlex.xs="100">
+      <mat-card-header>
+        <mat-card-title><b>{{blog.header}}</b></mat-card-title>
+        <mat-card-subtitle>Posted By: {{blog.author}} On {{blog.createdat | date: 'MMM-yy'}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="blog.headerimage" [alt]="blog.header">
 
-    <mat-card-content>
-        {{blog.sub}}
+      <mat-card-content>
+          {{blog.sub}}
 
-    </mat-card-content>
-    <p style="margin-bottom: 3%">
-        <mat-chip-list aria-label="Tags">
-          <mat-chip *ngFor="let tag of blog.tags">{{tag}}</mat-chip>
-        </mat-chip-list>
-      </p>
-  </mat-card>
+      </mat-card-content>
+      <p style="margin-bottom: 3%">
+          <mat-chip-list aria-label="Tags">
+            <mat-chip *ngFor="let tag of blog.tags">{{tag}}</mat-chip>
+          </mat-chip-list>
+        </p>
+    </mat-card>
 </div>
