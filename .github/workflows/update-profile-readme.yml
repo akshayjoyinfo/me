@@ -1,0 +1,25 @@
+name: Waka Readme Stats
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    pull_request:
+      branches: [master]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-readme:
+    name: Update Readme with Metrics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cxyfreedom/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: "waka_fd49784f-12a3-44db-80f2-2c03fd2660f0"
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SHOW_PROJECTS: "False"
+          SHOW_TIMEZONE: "False"
+          SHOW_LOC_CHART: "False"
+          SHOW_LINES_OF_CODE: "False"
+          SHOW_PROFILE_VIEWS: "False"
